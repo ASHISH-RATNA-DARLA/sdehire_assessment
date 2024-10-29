@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sdehire/static/css/main.050a7ecc.css",
+    "main.js": "/sdehire/static/js/main.d8129e24.js",
+    "static/js/453.68693753.chunk.js": "/sdehire/static/js/453.68693753.chunk.js",
+    "index.html": "/sdehire/index.html",
+    "main.050a7ecc.css.map": "/sdehire/static/css/main.050a7ecc.css.map",
+    "main.d8129e24.js.map": "/sdehire/static/js/main.d8129e24.js.map",
+    "453.68693753.chunk.js.map": "/sdehire/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.050a7ecc.css",
+    "static/js/main.d8129e24.js"
+  ]
+}
