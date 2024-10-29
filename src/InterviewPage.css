@@ -1,0 +1,267 @@
+/* Layout for the entire page */
+.interview-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Header Section */
+  .interview-page-header {
+    margin-top: 5%;
+    margin-bottom: 2rem;
+  }
+
+  .interview-page-header h1 {
+    font-size: 2rem;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    color: #002f5c;
+    margin-bottom: 0.5rem;
+  }
+
+  .interview-page-header p {
+    font-size: 1.125rem;
+    color: #6c6c6e;
+  }
+
+  /* Coins and Progress Bar Section */
+  .interview-page-coins-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .interview-page-coins {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .interview-page-coins span {
+    font-size: 1.25rem;
+    color: #0094b3;
+    font-weight: bold;
+  }
+
+  /* Progress Bar Styling */
+  .interview-page-progress-bar {
+    width: 256px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .interview-page-progress-value {
+    height: 100%;
+    background-color: #0094b3;
+    transition: width 0.3s ease;
+  }
+
+  /* End Interview Button */
+  .interview-page-button {
+    padding: 0.5rem 1rem;
+    background-color: #0094b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .interview-page-button:hover {
+    background-color: #007a94;
+  }
+
+  /* Layout for Interview Question and Code Editor */
+  .interview-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* Interview Question Box */
+  .interview-page-question-box {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .interview-page-question-box h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #002f5c;
+  }
+
+  .interview-page-question-box p {
+    color: #002f5c;
+    font-size: 1rem;
+  }
+
+  /* Hint Box */
+  .interview-page-hint-box {
+    background-color: #c1c3c7;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: #002f5c;
+  }
+
+  /* Code Editor Section */
+  .interview-page-code-box {
+    background-color: #002f5c;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .interview-page-code-box h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .interview-page-code-box pre {
+    background-color: #001f3f;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    color: white;
+    overflow: auto;
+  }
+
+  /* Lisa AI Video Section */
+  .interview-page-video-header {
+    background-color: #0094b3;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .interview-page-video-body {
+    background-color: #f0f0f0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .interview-page-video-body span {
+    color: #6c6c6e;
+  }
+
+  /* Floating Video Box */
+  .interview-page-floating-video {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .interview-page-floating-video-header {
+    background-color: #0094b3;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .interview-page-floating-video-body {
+    color: #6c6c6e;
+    padding: 1rem;
+  }
+
+  .interview-page-floating-video button {
+    padding: 0.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .interview-page-floating-video button:hover {
+    background-color: #007a94;
+  }
+
+  /* Minimization animation */
+  .interview-page-transition-all {
+    transition: all 0.3s ease-in-out;
+  }
+  /* Existing styles remain unchanged */
+
+/* Hint Box - Locked and Unlocked */
+.interview-page-hint-box {
+    background-color: #c1c3c7;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: #002f5c;
+    position: relative;
+    text-align: center;
+  }
+
+  .interview-page-hint-box.locked {
+    background-color: #e0e0e0;
+    color: #999999;
+  }
+
+  .interview-page-hint-box.unlocked {
+    background-color: #c1c3c7;
+    color: #002f5c;
+  }
+
+  .locked-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .interview-page-button.unlock-button {
+    margin-top: 1rem;
+    background-color: #0094b3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .interview-page-button.unlock-button:disabled {
+    background-color: #6c6c6e;
+    cursor: not-allowed;
+  }
+
+  .interview-page-button.unlock-button:hover:enabled {
+    background-color: #007a94;
+  }
+/* Main container */
+.interview-page-container {
+  display: flex;
+}
+
+/* Sidebar and Content adjustments */
+.interview-page-content {
+  flex: 1;
+  padding-left: 250px; /* Space for sidebar */
+}
+
+/* Layout for the Interview Page */
+.interview-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+
+
+/* Other styles from InterviewPage.css continue here... */

@@ -1,0 +1,213 @@
+/* feedback-form.css */
+
+/* Main Card Styling */
+.feedback-form-card-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  /* Card Header Styling */
+  .feedback-form-card-header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .feedback-form-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #002f5c;
+    margin-bottom: 8px;
+  }
+
+  .feedback-form-card-description {
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+  }
+
+  /* Card Content Styling */
+  .feedback-form-card-content {
+    padding: 20px;
+  }
+
+  /* Progress Bar */
+  .feedback-form-progress-container {
+    margin-bottom: 20px;
+  }
+
+  .feedback-form-progress-bar-bg {
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .feedback-form-progress-bar-fill {
+    height: 100%;
+    background-color: #17a2b8;
+    transition: width 0.3s ease;
+  }
+
+  .feedback-form-progress-text {
+    text-align: center;
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 8px;
+  }
+
+  /* Step 4 Specific Styling */
+  .feedback-form-step-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .feedback-form-label-with-tooltip {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #002f5c;
+  }
+
+  .feedback-form-tooltip {
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .feedback-form-tooltip:hover .feedback-form-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .feedback-form-tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above tooltip icon */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    transition: opacity 0.3s;
+  }
+
+  .feedback-form-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow pointing down */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+
+  /* Textarea Styling */
+  .feedback-form-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    background-color: #f9f9f9;
+  }
+
+  .feedback-form-textarea:focus {
+    border-color: #17a2b8;
+    background-color: #fff;
+  }
+
+  /* Slider Styling */
+  .feedback-form-slider-container {
+    position: relative;
+    margin-top: 8px;
+  }
+
+  .feedback-form-slider {
+    width: 100%;
+    appearance: none;
+    height: 6px;
+    background: #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .feedback-form-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #8bbc42;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .feedback-form-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 4px;
+  }
+
+  .feedback-form-slider-value {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 4px;
+  }
+
+  /* Button Styling */
+  .feedback-form-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+
+  .feedback-form-back-button,
+  .feedback-form-next-button {
+    background-color: #e2e6ea;
+    color: #495057;
+    transition: background-color 0.3s;
+  }
+
+  .feedback-form-back-button:hover,
+  .feedback-form-next-button:hover {
+    background-color: #d0d0d0;
+  }
+
+  .feedback-form-submit-button {
+    background-color: #002f5c;
+    color: #fff;
+  }
+
+  .feedback-form-submit-button:hover {
+    background-color: #001f4d;
+  }
+
+  /* Card Footer Styling */
+  .feedback-form-card-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }

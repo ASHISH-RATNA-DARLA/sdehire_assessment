@@ -1,0 +1,260 @@
+/* Main Container */
+.sde-profile-main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between items */
+    background-color: #ffffff;
+    padding: 15px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  /* Menu button styles */
+  .sde-profile-menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+  /* Menu icon styles */
+  .sde-profile-menu-icon {
+    width: 24px;
+    height: 24px;
+    color: #002f5c; /* Navy color */
+  }
+
+  /* Header title styles */
+  .sde-profile-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3c3c3f;
+    text-align: center; /* Center the title */
+    flex: 1; /* Takes remaining space */
+    margin-left: -40px; /* Center-aligns it relative to the Menu icon */
+  }
+  .user_info{
+    margin-top: 10%;
+  }
+.sde-profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+
+
+  .sde-profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #002f5c; /* Navy border */
+  }
+
+  .sde-profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002f5c; /* Navy */
+  }
+
+  .sde-profile-title {
+    font-size: 16px;
+    color: #6c6c6e; /* Slate color */
+  }
+
+  /* Card Styling */
+  .sde-profile-card {
+    background-color: #ffffff;
+    border: 1px solid #c1c3c7; /* Steel gray */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .sde-profile-card-header {
+    margin-bottom: 15px;
+  }
+
+  .sde-profile-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002f5c; /* Navy */
+  }
+
+  /* Overview Card */
+  .sde-profile-overview-card {
+    background-color: #f4f4f4;
+  }
+
+  .sde-profile-overview-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sde-profile-overview-icon {
+    color: #0094b3; /* Aqua */
+  }
+
+  .sde-profile-overview-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6c6c6e; /* Slate color */
+  }
+
+  /* Progress Component */
+  .sde-profile-progress {
+    background-color: #e5e5e5;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .sde-profile-progress-indicator {
+    height: 100%;
+    background-color: #0094b3; /* Aqua */
+  }
+
+  /* Chart Card */
+  .sde-profile-chart-card {
+    background-color: #ffffff;
+  }
+
+  .sde-profile-chart-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002f5c;
+  }
+
+  /* Tabs and Skill Item */
+  /* General container styling */
+.sde-profile-skills-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  /* Tabs List Styling */
+  .sde-profile-tabs-list {
+    display: flex;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #e5e5e5;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .sde-profile-tabs-trigger {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-weight: 500;
+    color: #3c3c3f;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 6px;
+  }
+
+  .sde-profile-tabs-trigger:hover {
+    background-color: #f0f0f0;
+    color: #002f5c;
+  }
+
+  .sde-profile-tabs-trigger-active {
+    background-color: #ffffff;
+    color: #002f5c;
+    border-bottom: 3px solid #0094b3;
+    font-weight: 600;
+  }
+
+  /* Tab Content */
+  .sde-profile-skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s;
+  }
+
+  .sde-profile-skill-item:hover {
+    background-color: #e5e5e5;
+  }
+
+  /* Progress Bar Styling */
+  .sde-profile-skill-progress-bg {
+    background-color: #d8d8d8;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px;
+    width: 60%;
+  }
+
+  .sde-profile-skill-progress-indicator {
+    height: 100%;
+    background-color: #0094b3;
+    transition: width 0.3s;
+  }
+
+  .sde-profile-skill-progress-indicator:hover {
+    background-color: #1f4e6f;
+  }
+
+  /* Card Title */
+  .sde-profile-card-title {
+    font-size: 1.25rem;
+    color: #002f5c;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+
+  /* Feedback Card */
+  .sde-profile-feedback-card {
+    background-color: #f4f4f4;
+  }
+
+  .sde-profile-feedback-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002f5c;
+  }
+
+  .sde-profile-feedback-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #3c3c3f;
+  }
+
+  /* Footer */
+  .sde-profile-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #c1c3c7;
+  }
+
+  .sde-profile-footer-icon {
+    font-size: 20px;
+    color: #0094b3;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .sde-profile-footer-icon:hover {
+    color: #1f4e6f;
+  }

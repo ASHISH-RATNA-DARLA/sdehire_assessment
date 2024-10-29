@@ -1,0 +1,224 @@
+/* General styling */
+.report-page {
+  margin-top: 100px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+  .report_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 30px 10px; /* Further reduced padding */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slightly subtler shadow */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: auto;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Small space between menu icon and title */
+  }
+
+  .menu-button {
+    padding: 2px 4px; /* Minimal padding for button */
+  }
+
+  .menu-icon {
+    font-size: 1.2rem; /* Adjust icon size if necessary */
+  }
+
+  h1 {
+    font-size:100%; /* Slightly smaller font size for compactness */
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+  .report-main {
+    margin-top: 0.5%;
+    padding: 20px;
+  }
+
+  .candidate-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+  .avatar {
+    background-color: #1976d2;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 20px;
+    font-family: 'ProximaNova-Bold', sans-serif;
+  }
+
+  .score-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .score-card {
+    flex: 1;
+    margin-right: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'ProximaNova-Semibold', sans-serif;
+    font-weight: 600;
+  }
+
+  .score-card:last-child {
+    margin-right: 0;
+  }
+
+  .score-card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .score-card p {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'ProximaNova-Bold', sans-serif;
+  }
+
+  .score-green {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .score-yellow {
+    background-color: #ffeb3b;
+    color: white;
+  }
+
+  .score-red {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .charts-section {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .progress-bars {
+    flex: 2;
+    margin-right: 20px;
+  }
+
+  .progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto-Slab', sans-serif;
+    font-weight: 500;
+  }
+
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px; /* Reduced the bar height for a slimmer look */
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .progress-bar div {
+    background-color: #4caf50;
+    height: 100%;
+  }
+
+  .pie-chart-container {
+    flex: 1;
+  }
+
+  .bar-chart-container {
+    margin-bottom: 20px;
+  }
+
+  .suggestions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+  .suggestions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .suggestions ul li {
+    margin-bottom: 10px;
+  }
+
+  .buttons-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Adds space between buttons */
+  }
+
+  .feedback-button, .next-interview-button, .download-button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .feedback-button:hover, .next-interview-button:hover, .download-button:hover {
+    background-color: #155a9e;
+  }
+
+  .download-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .download-button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'ProximaNova-Medium', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .download-button:hover {
+    background-color: #155a9e;
+  }

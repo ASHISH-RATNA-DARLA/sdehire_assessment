@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<link rel="icon" href="%PUBLIC_URL%/logo.png" type="image/png" />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

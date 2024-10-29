@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Responsive Layout */
+
+/* Large screens (desktops, 1200px and above) */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px; /* Add padding to container on large screens */
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Medium screens (tablets, 992px to 1199px) */
+@media (max-width: 992px) {
+  body {
+    font-size: 16px; /* Slightly larger font for readability on medium screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust h1 for medium screens */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* Adjust h2 for medium screens */
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* Small screens (landscape phones, 768px to 991px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Reduce heading sizes */
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 0 10px; /* Further reduce padding */
+  }
+
+  .card {
+    padding: 15px; /* Adjust card padding on small screens */
+  }
+
+  .menu-button {
+    padding: 8px 12px; /* Adjust button padding for smaller screens */
+  }
+}
+
+/* Extra small screens (portrait phones, less than 768px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px; /* Smaller base font for readability */
+  }
+
+  h1 {
+    font-size: 1.6rem; /* Adjust heading sizes for mobile */
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
+  .menu-button {
+    padding: 6px 10px; /* Reduced padding for mobile menu button */
+  }
+
+  .header-title {
+    font-size: 1rem; /* Smaller header title for mobile */
+  }
+
+  .settings-card, .card {
+    padding: 10px; /* Compact padding for mobile views */
+  }
 }
